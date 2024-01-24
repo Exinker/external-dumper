@@ -66,7 +66,7 @@ class Dump2:
     def __post_init__(self):
         assert self.version == b'\x02', fr'Dump version {self.version} is not supported!'
 
-    def __repr__(self) -> str:
+    def __str__(self) -> str:
         text = _print_data(self.data, prefix=INDENT)
         content = [
             f'HEADER: {self.header}',
