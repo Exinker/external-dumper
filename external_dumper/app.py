@@ -162,7 +162,7 @@ class Dumper:
 
         # verbose
         if verbose:
-            dump.print()
+            print(dump)
 
         #
         self._dump = dump
@@ -171,14 +171,9 @@ class Dumper:
         """Write dump to file."""
         self.dump.write()
 
-    def print(self) -> None:
-        """Print dump to stdin."""
-        self.dump.print()
-
 
 if __name__ == '__main__':
     dumper = Dumper()
 
     dumper.run()
     dumper.write()
-    dumper.print()

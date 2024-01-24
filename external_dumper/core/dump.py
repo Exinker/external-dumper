@@ -41,9 +41,6 @@ class Dump2:
     data: dict
 
     # --------        handlers        --------
-    def print(self) -> None:
-        sys.stdout.write(f'{self}')
-
     def write(self, format: Literal['pkl',] = 'pkl') -> None:
         """Write dump to `.pkl` file."""
 
